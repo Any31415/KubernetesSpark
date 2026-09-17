@@ -1,0 +1,6 @@
+$env:JAVA_HOME = "C:\Users\B030~1\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.20.101-hotspot"
+$env:HADOOP_HOME = "C:\hadoop"
+$env:SPARK_HOME = "C:\lab5\.venv\Lib\site-packages\pyspark"
+$env:PYSPARK_PYTHON = "C:\lab5\.venv\Scripts\python.exe"
+$env:PYSPARK_DRIVER_PYTHON = "C:\lab5\.venv\Scripts\python.exe"
+$env:Path = "$env:JAVA_HOME\bin;$env:HADOOP_HOME\bin;$env:Path"
