@@ -3,13 +3,14 @@ from pyspark.ml.feature import VectorAssembler, StandardScaler
 from pyspark.ml.clustering import KMeansModel
 import urllib.request
 import json
+import os
 
 spark = SparkSession.builder \
     .appName("OpenFoodFactsInference") \
     .master("local[*]") \
     .getOrCreate()
 
-DATAMART_URL = "http://localhost:8080"
+DATAMART_URL = os.environ.get("DATAMART_URL", "http://localhost:8080")
 
 # 1. Выгрузка данных через витрину (не напрямую из MySQL!)
 print("Выгрузка данных из витрины...")
@@ -40,6 +41,12 @@ model = KMeansModel.load("kmeans_model")
 predictions = model.transform(df_scaled).select("id", "cluster")
 results = [{"product_id": row["id"], "cluster": row["cluster"]} for row in predictions.collect()]
 
+LIMIT = None
+# LIMIT = 5
+
+if LIMIT is not None:
+    results = results[:LIMIT]
+    print(f"Ограничено до {LIMIT} записей для теста")
 # 6. Отправка результата обратно через витрину
 print("Отправка предсказаний в витрину...")
 payload = json.dumps(results, separators=(",", ":")).encode("utf-8")

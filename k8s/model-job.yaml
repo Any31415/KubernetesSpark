@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: inference-job
+spec:
+  backoffLimit: 1
+  template:
+    spec:
+      containers:
+        - name: inference
+          image: inference:latest
+          imagePullPolicy: Never
+          env:
+            - name: DATAMART_URL
+              value: "http://datamart:8080"
+      restartPolicy: Never
