@@ -3,3 +3,4 @@ data.csv.gz
 kmeans_model/
 __pycache__/
 *.pyc
+.env
