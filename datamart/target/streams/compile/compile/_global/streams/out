@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\lab5\datamart\src\main\scala\Main.scala:100:53: ')' expected but eof found.[0m
+[0m[[0m[31merror[0m] [0m[0m        sb.append(s"<tr><td>${rs.getInt("product_id"[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

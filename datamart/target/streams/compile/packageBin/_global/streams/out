@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\lab5\datamart\target\scala-2.13\datamart_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$ClearHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main$ClearHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$DataHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main$DataHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$ResultsHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main$ResultsHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$ViewHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main$ViewHandler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\lab5\datamart\target\scala-2.13\classes\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
